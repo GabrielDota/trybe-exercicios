@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#inicio {
+    font-family: 'Montserrat', sans-serif;
+    color: #274C77;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#minhaFoto {
+    width: 500px;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #A3CEF1;
+}
+
+#paragrafo-1 {
+    color: #E7ECEF;
+    font-size: 18px;
+}
+
+#paragrafo-2 {
+    color: #8B8C89;
+}
+
+h3 {
+    color: #274C77;
+    font-size: 20px;
+
+}
+
+#habilidades-destaque {
+    color: #E7ECEF;
+    font-size: 18px;
+}
+
+#outras-habilidades {
+    color: #8B8C89;
+}
+
+.header {
+    height: 900px;
+}
+
+.foto-eu {
+    float: left;
+    padding: 20px;
+    background-color: rgb(170, 170, 170);
+}
+
+.pingu {
+    padding-left: 20px;
+
+}
+
+.sobre-mim {
+    height: 300px;
+    margin: 20px;
+    padding: 50px;
+}
+
+.header h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.habilidades {
+    padding: 20px;
+    background-color: darkblue;
+    height: 180px;
+}
+
+.habilidades h3 {
+    color: red;
+    padding: 5px;
+}
+
+.habilidades li:nth-of-type(2n+1) {
+    font-family: monospace;
+}
+
+.ponto-interesse {
+    padding: 20px;
+}
