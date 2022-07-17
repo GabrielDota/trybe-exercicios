@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+JavaScript
+Phyton
+C++
+C#
+CSS
