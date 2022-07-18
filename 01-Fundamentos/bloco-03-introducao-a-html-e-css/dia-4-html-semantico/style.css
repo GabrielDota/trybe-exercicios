@@ -1,0 +1,7 @@
+.titulo{
+    font-size: 40px;
+}
+table, td{
+    border: 1px solid black;
+    width: 30px;
+}
