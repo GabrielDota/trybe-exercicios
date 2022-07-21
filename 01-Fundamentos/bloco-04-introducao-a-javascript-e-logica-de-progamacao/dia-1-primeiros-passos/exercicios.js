@@ -147,29 +147,50 @@ if(valorCusto < 0 || valorVenda < 0){
 }
 
 // exercicio 11
-let salarioBruto, salarioBase, calculaSalarioLiquido, aliquotaINSS, aliquotaIR, parcelas;
+let salarioBruto, salarioBase, calculaSalarioLiquido, aliquotaINSS, IR, aliquotaIR, parcelas;
 salarioBruto= 3000
 
 if(salarioBruto <= 1556.94){
   aliquotaINSS = 0.08;
-  salarioBase = (salarioBruto * aliquotaINSS) - salarioBruto;
+  salarioBase = salarioBruto - (salarioBruto * aliquotaINSS); 
 }
 
 else if(salarioBruto < 2594.93){
   aliquotaINSS = 0.09
-  salarioBase = (salarioBruto * aliquotaINSS) - salarioBruto;
+  salarioBase = salarioBruto - (salarioBruto * aliquotaINSS);
 }
 
 else if(salarioBruto < 5189.82){
   aliquotaINSS = 0.11
-  salarioBase = (salarioBruto * aliquotaINSS) - salarioBruto;
+  salarioBase = salarioBruto - (salarioBruto * aliquotaINSS);
 }
 
 else{
   aliquotaINSS = 570,88
-  salarioBase =  aliquotaINSS - salarioBruto;
+  salarioBase = salarioBruto - aliquotaINSS;
 }
 
-console.log(salarioBase)
 
+if(salarioBase <= 1903.98){
+  aliquotaIR = 0
+} 
+else if(salarioBase < 2826.66){
+  aliquotaIR = 0.075;
+  parcelas = 142.80;
+} 
+else if(salarioBase < 3751.06){
+  aliquotaIR = 0.15;
+  parcelas = 354.80;
+} 
+else if(salarioBase < 4664.69){
+  aliquotaIR = 0.225;
+  parcelas = 636.13;
+} 
+else {
+  aliquotaIR = 0.275;
+  parcelas = 869.36;
+}
+IR = (salarioBase * aliquotaIR) - parcelas
 
+calculaSalarioLiquido = salarioBase - IR
+console.log(calculaSalarioLiquido)
