@@ -1,0 +1,33 @@
+.titulo {
+  font-size: 40px;
+}
+
+header{
+background-color: #CAF0F8;
+color: black;
+padding: 15px;
+}
+
+nav a {
+text-decoration: none;
+position: relative;
+}
+
+body{
+  background-color: #90E0EF;
+}
+
+table,
+td {
+  border: 1px solid black;
+  width: 30px;
+}
+
+aside li {
+  font-size: 20px;
+
+}
+
+footer {
+  border-top: 2px solid gray;
+}
