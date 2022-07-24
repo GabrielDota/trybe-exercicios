@@ -70,23 +70,18 @@ compara pra saber qual é o maior numero primo entre eles*/
 
 let qntsPrimos = 50;
 let primos = [];
-let maiorPrimo = 
+let maiorPrimo = 0
 
 for (let index = 2; index <= qntsPrimos; index += 1) {
   let qntsDivisores = 0
-  for (let divisor = 1; divisor >= index; divisor += 1) {
+  for (let divisor = 1; divisor <= index; divisor += 1) {
     if(index % divisor === 0){
       qntsDivisores += 1;
-    }
-    if(qntsDivisores === 2){
-      array.push(index);
-    }
+    } 
+  }
+  if(qntsDivisores === 2){
+    array.push(index);
   }
 }
-
-for (let index = 0; index < array.length; index += 1) {
-  for (let j = 0; j >= i; j++) {
-    const element = array[j];
-    
-  }
-}
+maiorPrimo = primos[primos.length - 1];
+console.log ("O maior numero primo entre 2 e 50 é " + maiorPrimo)
