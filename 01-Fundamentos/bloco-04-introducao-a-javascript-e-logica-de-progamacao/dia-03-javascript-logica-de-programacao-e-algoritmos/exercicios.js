@@ -9,11 +9,17 @@ for (let i = 1; i <= fatorial; i += 1) {
 
 //exercicio 2
 let word = 'tryber';
-/* criar uma variavel que armaze a string ao contrario
-abrir loop for começando do final e indo até o começo
-*/
 
 let inverte = ''
+for (let index = word.length - 1; index >= 0; index -= 1) {
+  inverte += word[index];
+}
+console.log(inverte);
+
+//outra forma
+let invertido;
+invertido = word.split("").reverse().join("");
+console.log(invertido);
 
 
 //exercicio 3
@@ -33,9 +39,9 @@ for (i = 0; i < array.length; i += 1) {
   string1 = array[i]
   for (j = 0; j < i; j += 1) {
     string2 = array[j]
-    if(string1.length > string2.length
-      ){
-      if(string1.length > maiorString.length){
+    if (string1.length > string2.length
+    ) {
+      if (string1.length > maiorString.length) {
         maiorString = string1;
       }
     }
@@ -47,9 +53,9 @@ for (i = 0; i < array.length; i += 1) {
   string1 = array[i]
   for (j = 0; j < i; j += 1) {
     string2 = array[j]
-    if(string1.length < string2.length
-      ){
-      if(string1.length < maiorString.length){
+    if (string1.length < string2.length
+    ) {
+      if (string1.length < maiorString.length) {
         menorString = string1;
       }
     }
@@ -75,13 +81,14 @@ let maiorPrimo = 0
 for (let index = 2; index <= qntsPrimos; index += 1) {
   let qntsDivisores = 0
   for (let divisor = 1; divisor <= index; divisor += 1) {
-    if(index % divisor === 0){
+    if (index % divisor === 0) {
       qntsDivisores += 1;
-    } 
+    }
   }
-  if(qntsDivisores === 2){
-    array.push(index);
+  if (qntsDivisores === 2) {
+    primos.push(index);
   }
 }
 maiorPrimo = primos[primos.length - 1];
-console.log ("O maior numero primo entre 2 e 50 é " + maiorPrimo)
+console.log(primos)
+console.log("O maior numero primo entre 2 e 50 é " + maiorPrimo);
